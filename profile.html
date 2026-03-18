@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VocaBoost | Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="profile-container">
+
+    <div class="profile-card">
+
+      <!-- Avatar -->
+      <div class="avatar" id="avatar">G</div>
+
+      <!-- User Info -->
+      <h2 id="userName">Guest</h2>
+      <p id="userEmail">Not logged in</p>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number" id="streak">0</span>
+          <span class="stat-label">🔥 Day Streak</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-number" id="wordsLearned">0</span>
+          <span class="stat-label">Words Learned</span>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <p class="quote">Consistency beats intensity.</p>
+
+      <!-- Logout -->
+      <button class="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+
+  </div>
+   <nav class="nav-bar">
+  <a href="home.html" class="nav-item">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="wordbank.html" class="nav-item">
+    <i class="fa-solid fa-book"></i>
+    <span>WordBank</span>
+  </a>
+
+  <a href="revision.html" class="nav-item">
+    <i class="fa-solid fa-clock-rotate-left"></i>
+    <span>History</span>
+  </a>
+
+  <!-- ACTIVE PAGE -->
+  <a href="profile.html" class="nav-item active">
+    <i class="fa-solid fa-user"></i>
+    <span>Profile</span>
+  </a>
+</nav>
+
+  <script src="profile.js"></script>
+</body>
+</html>
