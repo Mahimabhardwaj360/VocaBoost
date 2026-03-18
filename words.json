@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "word": "Serene",
+    "ipa": "/sɪˈriːn/",
+    "meaning": "Calm and peaceful.",
+    "example": "The temple had a serene atmosphere."
+  },
+  {
+    "id": 2,
+    "word": "Resilient",
+    "ipa": "/rɪˈzɪl.jənt/",
+    "meaning": "Able to recover quickly from difficulties.",
+    "example": "She is resilient despite challenges."
+  },
+  {
+    "id": 3,
+    "word": "Meticulous",
+    "ipa": "/məˈtɪk.jə.ləs/",
+    "meaning": "Showing great attention to detail.",
+    "example": "He kept meticulous records."
+  },
+  {
+    "id": 4,
+    "word": "Empathy",
+    "ipa": "/ˈɛm.pə.θi/",
+    "meaning": "Understanding others' feelings.",
+    "example": "Empathy makes leaders effective."
+  },
+  {
+    "id": 5,
+    "word": "Innovate",
+    "ipa": "/ˈɪn.ə.veɪt/",
+    "meaning": "To introduce new ideas.",
+    "example": "Startups must innovate to grow."
+  },
+  {
+    "id": 6,
+    "word": "Diligent",
+    "ipa": "/ˈdɪl.ɪ.dʒənt/",
+    "meaning": "Hardworking and careful.",
+    "example": "She is diligent in her studies."
+  },
+  {
+    "id": 7,
+    "word": "Prudent",
+    "ipa": "/ˈpruː.dənt/",
+    "meaning": "Wise and careful in decisions.",
+    "example": "Saving money is a prudent choice."
+  },
+  {
+    "id": 8,
+    "word": "Versatile",
+    "ipa": "/ˈvɜː.sə.taɪl/",
+    "meaning": "Able to adapt to many uses.",
+    "example": "Python is a versatile language."
+  },
+  {
+    "id": 9,
+    "word": "Gratitude",
+    "ipa": "/ˈɡræt.ɪ.tjuːd/",
+    "meaning": "Thankfulness.",
+    "example": "She expressed gratitude for the help."
+  },
+  {
+    "id": 10,
+    "word": "Integrity",
+    "ipa": "/ɪnˈtɛɡ.rɪ.ti/",
+    "meaning": "Honesty and strong morals.",
+    "example": "Integrity builds trust."
+  },
+  {
+    "id": 11,
+    "word": "Clarity",
+    "ipa": "/ˈklær.ɪ.ti/",
+    "meaning": "Clearness of thought.",
+    "example": "He explained the concept with clarity."
+  },
+  {
+    "id": 12,
+    "word": "Ambitious",
+    "ipa": "/æmˈbɪʃ.əs/",
+    "meaning": "Strong desire to succeed.",
+    "example": "She is ambitious about her career."
+  },
+  {
+    "id": 13,
+    "word": "Eloquent",
+    "ipa": "/ˈɛl.ə.kwənt/",
+    "meaning": "Fluent or persuasive in speaking.",
+    "example": "The speech was eloquent."
+  },
+  {
+    "id": 14,
+    "word": "Consistent",
+    "ipa": "/kənˈsɪs.tənt/",
+    "meaning": "Acting the same way over time.",
+    "example": "Consistency leads to success."
+  },
+  {
+    "id": 15,
+    "word": "Adaptable",
+    "ipa": "/əˈdæp.tə.bəl/",
+    "meaning": "Able to adjust to change.",
+    "example": "She is adaptable in new situations."
+  },
+  {
+    "id": 16,
+    "word": "Optimistic",
+    "ipa": "/ˌɒp.tɪˈmɪs.tɪk/",
+    "meaning": "Hopeful and positive.",
+    "example": "He remains optimistic."
+  },
+  {
+    "id": 17,
+    "word": "Curious",
+    "ipa": "/ˈkjʊə.rɪ.əs/",
+    "meaning": "Eager to learn.",
+    "example": "Curious minds ask questions."
+  },
+  {
+    "id": 18,
+    "word": "Efficient",
+    "ipa": "/ɪˈfɪʃ.ənt/",
+    "meaning": "Working well without waste.",
+    "example": "The system is efficient."
+  },
+  {
+    "id": 19,
+    "word": "Humble",
+    "ipa": "/ˈhʌm.bəl/",
+    "meaning": "Not proud or arrogant.",
+    "example": "Despite success, he stayed humble."
+  },
+  {
+    "id": 20,
+    "word": "Focused",
+    "ipa": "/ˈfəʊ.kəst/",
+    "meaning": "Concentrated on a goal.",
+    "example": "She stayed focused on studies."
+  },
+  {
+    "id": 21,
+    "word": "Confident",
+    "ipa": "/ˈkɒn.fɪ.dənt/",
+    "meaning": "Sure of oneself.",
+    "example": "Confidence improves communication."
+  },
+  {
+    "id": 22,
+    "word": "Creative",
+    "ipa": "/kriˈeɪ.tɪv/",
+    "meaning": "Having original ideas.",
+    "example": "Designers must be creative."
+  },
+  {
+    "id": 23,
+    "word": "Reliable",
+    "ipa": "/rɪˈlaɪ.ə.bəl/",
+    "meaning": "Can be trusted.",
+    "example": "He is a reliable teammate."
+  },
+  {
+    "id": 24,
+    "word": "Motivated",
+    "ipa": "/ˈməʊ.tɪ.veɪ.tɪd/",
+    "meaning": "Driven to achieve goals.",
+    "example": "She is motivated to learn."
+  },
+  {
+    "id": 25,
+    "word": "Persistent",
+    "ipa": "/pəˈsɪs.tənt/",
+    "meaning": "Continuing despite difficulty.",
+    "example": "Persistent effort pays off."
+  },
+  {
+    "id": 26,
+    "word": "Balanced",
+    "ipa": "/ˈbæl.ənst/",
+    "meaning": "Stable and well-managed.",
+    "example": "A balanced life is healthy."
+  },
+  {
+    "id": 27,
+    "word": "Attentive",
+    "ipa": "/əˈtɛn.tɪv/",
+    "meaning": "Paying attention.",
+    "example": "Students should be attentive."
+  },
+  {
+    "id": 28,
+    "word": "Thoughtful",
+    "ipa": "/ˈθɔːt.fəl/",
+    "meaning": "Considerate of others.",
+    "example": "It was a thoughtful gesture."
+  },
+  {
+    "id": 29,
+    "word": "Capable",
+    "ipa": "/ˈkeɪ.pə.bəl/",
+    "meaning": "Having ability.",
+    "example": "She is capable of success."
+  },
+  {
+    "id": 30,
+    "word": "Self-disciplined",
+    "ipa": "/ˌsɛlfˈdɪs.ɪ.plɪnd/",
+    "meaning": "Able to control oneself.",
+    "example": "Self-discipline builds habits."
+  }
+]
