@@ -1,0 +1,69 @@
+/* ===============================
+   Global Variables & Base
+================================ */
+:root {
+    --purple-primary: #7952B3;
+    --purple-gradient: linear-gradient(135deg, #7952B3, #A56CC2);
+    --bg-light: #F4F0FF;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --shadow-soft: rgba(0,0,0,0.15) 0px 8px 24px;
+    --radius-l: 20px;
+    --radius-m: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background: var(--bg-light); color: var(--text-dark); min-height: 100vh; display:flex; flex-direction:column; }
+.container { max-width: 600px; margin:0 auto; padding:20px; padding-bottom:120px; }
+
+/* --------------------------
+   Header & Search
+--------------------------- */
+.header { text-align:center; margin-bottom:25px; }
+.heading { font-size:2.1rem; font-weight:800; color:var(--purple-primary); }
+.subtitle { font-size:1rem; color:#999; margin-top:5px; }
+#searchBox {
+    width: 100%;
+    max-width:400px;
+    margin-top:15px;
+    padding:8px 12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:1rem;
+}
+
+/* --------------------------
+   Word Cards
+--------------------------- */
+.card {
+    background: var(--text-light);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-soft);
+    padding: 18px;
+    margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+.card h2 { font-size:1.6rem; color:var(--purple-primary); margin-bottom:4px; }
+.card .ipa { font-style:italic; opacity:0.8; margin-bottom:8px; }
+.card p { font-size:1rem; margin-top:5px; }
+
+/* --------------------------
+   Placeholder
+--------------------------- */
+.placeholder { text-align:center; font-size:1rem; color:#666; margin-top:40px; }
+
+/* --------------------------
+   Navbar
+--------------------------- */
+.nav-bar {
+    position: fixed; bottom:0; left:50%; transform: translateX(-50%);
+    width:100%; max-width:600px; height:90px; background:var(--text-light);
+    display:flex; justify-content:space-around; align-items:center;
+    box-shadow:0 -6px 18px rgba(0,0,0,0.1);
+    border-top-left-radius: var(--radius-l); border-top-right-radius: var(--radius-l);
+    z-index:1000;
+}
+.nav-item { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#999; font-size:0.85rem; gap:6px; transition: color 0.3s; }
+.nav-item i { font-size:1.5rem; }
+.nav-item.active { color:var(--purple-primary); }
+.nav-item.active i { transform: scale(1.1); }

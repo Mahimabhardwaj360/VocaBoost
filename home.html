@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocaBoost | Home Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="heading">VocaBoost</h1>
+            <p class="welcome-message" id="welcomeMessage">Welcome, User!</p>
+        </header>
+
+        <div class="word-card-wrapper">
+            <div class="card primary-card initial-state" id="wordCard">
+
+    <!-- Date Display -->
+    <p class="word-date" id="wordDate"></p>
+
+    <div class="initial-content" id="initialContent">
+
+                   <i class="fas fa-lightbulb icon-large"></i>
+                    <p>Word of the Day</p>
+                </div>
+
+                <div class="revealed-content" id="revealedContent">
+                    </div>
+            </div>
+            
+            <p class="click-hint" id="clickHint">Tap to reveal today’s word</p>
+        </div>
+
+        <section class="secondary-section">
+            
+            <div class="card secondary-card">
+                <i class="fas fa-history icon-small"></i>
+                <h3 class="card-title">Revision History</h3>
+                <p class="card-subtitle">Review the words you’ve learned</p>
+            </div>
+
+            <div class="card secondary-card">
+                <i class="fas fa-book-open icon-small"></i>
+                <h3 class="card-title">Word Bank</h3>
+                <p class="card-subtitle">Explore all words in one place.</p>
+            </div>
+        </section>
+
+    </div>
+    
+    <nav class="nav-bar">
+        <a href="home.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="wordbank.html" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>WordBank</span>
+        </a>
+        <a href="revision.html" class="nav-item">
+            <i class="fas fa-history"></i>
+            <span>History</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-user-circle"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+    
+    <script src="home.js"></script>
+</body>
+</html>
+
+
+   
