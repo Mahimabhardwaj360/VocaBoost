@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VocaBoost — Level Up Your Vocabulary</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">Voca<span>Boost</span></div>
+    <div class="nav-links">
+      <button class="nav-btn active" data-page="home">Home</button>
+      <button class="nav-btn" data-page="flashcards">Flashcards</button>
+      <button class="nav-btn" data-page="quiz">Quiz</button>
+      <button class="nav-btn" data-page="library">Library</button>
+    </div>
+    <div class="nav-streak">
+      <span class="flame">🔥</span>
+      <span id="streak-count">0</span> day streak
+    </div>
+  </nav>
+
+  <!-- PAGE: HOME -->
+  <section id="page-home" class="page active">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Your daily word workout</p>
+        <h1 class="hero-title">Words are <br/><span class="highlight">power.</span></h1>
+        <p class="hero-sub">Learn 5 new words a day, retain them forever. VocaBoost uses spaced repetition to make vocabulary stick.</p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="navigate('flashcards')">Start Studying</button>
+          <button class="btn-outline" onclick="navigate('quiz')">Take a Quiz</button>
+        </div>
+      </div>
+      <div class="hero-card-wrap">
+        <div class="wotd-card" id="wotd-card">
+          <div class="wotd-label">Word of the Day</div>
+          <div class="wotd-word" id="wotd-word">—</div>
+          <div class="wotd-phonetic" id="wotd-phonetic"></div>
+          <div class="wotd-pos" id="wotd-pos"></div>
+          <div class="wotd-def" id="wotd-def"></div>
+          <div class="wotd-example" id="wotd-example"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num" id="stat-learned">0</div>
+        <div class="stat-label">Words Learned</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="stat-mastered">0</div>
+        <div class="stat-label">Mastered</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="stat-quizzes">0</div>
+        <div class="stat-label">Quizzes Done</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="stat-accuracy">—</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="section-heading">Explore by Category</div>
+    <div class="categories-grid" id="categories-grid"></div>
+  </section>
+
+  <!-- PAGE: FLASHCARDS -->
+  <section id="page-flashcards" class="page">
+    <div class="page-header">
+      <h2>Flashcards</h2>
+      <div class="filter-row" id="fc-filter-row"></div>
+    </div>
+    <div class="fc-meta">
+      <span id="fc-progress-text">Card 1 of 10</span>
+      <div class="fc-progress-bar"><div class="fc-progress-fill" id="fc-progress-fill"></div></div>
+    </div>
+    <div class="flashcard-area">
+      <button class="fc-nav-btn" id="fc-prev">&#8592;</button>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="flashcard-inner" id="flashcard-inner">
+          <div class="flashcard-front">
+            <div class="fc-category" id="fc-category"></div>
+            <div class="fc-word" id="fc-word">—</div>
+            <div class="fc-phonetic" id="fc-phonetic"></div>
+            <div class="fc-tap-hint">tap to flip</div>
+          </div>
+          <div class="flashcard-back">
+            <div class="fc-pos" id="fc-pos"></div>
+            <div class="fc-definition" id="fc-definition"></div>
+            <div class="fc-example" id="fc-example"></div>
+          </div>
+        </div>
+      </div>
+      <button class="fc-nav-btn" id="fc-next">&#8594;</button>
+    </div>
+    <div class="fc-actions">
+      <button class="fc-action-btn hard" onclick="rateCard('hard')">😓 Hard</button>
+      <button class="fc-action-btn ok" onclick="rateCard('ok')">🤔 So-so</button>
+      <button class="fc-action-btn easy" onclick="rateCard('easy')">✅ Easy</button>
+    </div>
+  </section>
+
+  <!-- PAGE: QUIZ -->
+  <section id="page-quiz" class="page">
+    <div class="page-header">
+      <h2>Quiz Mode</h2>
+      <button class="btn-primary small" onclick="startQuiz()">New Quiz</button>
+    </div>
+    <div id="quiz-setup" class="quiz-setup">
+      <p class="quiz-intro">Test your knowledge with multiple-choice questions.</p>
+      <div class="quiz-options-grid" id="quiz-cat-grid"></div>
+      <button class="btn-primary" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz-active" class="quiz-active hidden">
+      <div class="quiz-top">
+        <div class="quiz-score-display">Score: <span id="quiz-score">0</span></div>
+        <div class="quiz-qnum" id="quiz-qnum">Q1 / 10</div>
+      </div>
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+      <div class="quiz-card">
+        <p class="quiz-instruction">Choose the correct definition:</p>
+        <h3 class="quiz-word" id="quiz-word">—</h3>
+        <div class="quiz-choices" id="quiz-choices"></div>
+      </div>
+    </div>
+    <div id="quiz-result" class="quiz-result hidden">
+      <div class="result-emoji" id="result-emoji">🏆</div>
+      <h3 class="result-title" id="result-title">Well done!</h3>
+      <div class="result-score-big" id="result-score-big">—</div>
+      <p class="result-msg" id="result-msg"></p>
+      <button class="btn-primary" onclick="startQuiz()">Try Again</button>
+      <button class="btn-outline" onclick="navigate('flashcards')">Review Cards</button>
+    </div>
+  </section>
+
+  <!-- PAGE: LIBRARY -->
+  <section id="page-library" class="page">
+    <div class="page-header">
+      <h2>Word Library</h2>
+      <input class="search-input" id="lib-search" type="text" placeholder="Search words…" oninput="filterLibrary()" />
+    </div>
+    <div class="lib-filters" id="lib-filters"></div>
+    <div class="lib-grid" id="lib-grid"></div>
+  </section>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
